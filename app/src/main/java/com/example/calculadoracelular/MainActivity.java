@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
-    Button btnSair, btnCalculo;
+    Button btnSair, btnCalculo, btnCalculo2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +30,15 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent calculosimples = new Intent(getApplicationContext(),com.example.calculadoracelular.calculosimples.class);
                 startActivity(calculosimples);
+            }
+        });
+
+        btnCalculo2 = findViewById(R.id.btnCalculo2);
+        btnCalculo2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent calculosIMC = new Intent(getApplicationContext(),com.example.calculadoracelular.calculoIMC.class);
+                startActivity(calculosIMC);
             }
         });
     }
