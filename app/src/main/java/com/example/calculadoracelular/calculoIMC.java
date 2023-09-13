@@ -57,5 +57,7 @@ public class calculoIMC extends AppCompatActivity {
         intent.putExtra("altura",altura.getText().toString());
         intent.putExtra("peso",peso.getText().toString());
         startActivity(intent);
+
     }
+
 }

@@ -19,18 +19,19 @@
 
     <LinearLayout
         android:id="@+id/linearLayout2"
-        android:layout_width="306dp"
-        android:layout_height="405dp"
+        android:layout_width="317dp"
+        android:layout_height="433dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.795">
 
         <EditText
             android:id="@+id/editTextNome"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="57dp"
             android:ems="10"
             android:hint="Nome"
             android:inputType="text" />
@@ -38,15 +39,16 @@
         <EditText
             android:id="@+id/editTextIdade"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="67dp"
             android:ems="10"
             android:hint="Idade"
-            android:inputType="number" />
+            android:inputType="number"
+            android:singleLine="false" />
 
         <EditText
             android:id="@+id/editTextPeso"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="60dp"
             android:ems="10"
             android:hint="Peso"
             android:inputType="number" />
@@ -54,15 +56,15 @@
         <EditText
             android:id="@+id/editTextAltura"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="61dp"
             android:ems="10"
             android:hint="Altura"
-            android:inputType="number" />
+            android:inputType="number|numberDecimal" />
 
         <Button
             android:id="@+id/btncalcularIMC"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="60dp"
             android:text="CALCULAR" />
 
     </LinearLayout>
