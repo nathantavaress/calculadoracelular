@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
-    Button btnSair, btnCalculo, btnCalculo2;
+    Button btnSair, btnCalculo, btnCalculo2, btnBhaskara;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,6 +39,14 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent calculosIMC = new Intent(getApplicationContext(),com.example.calculadoracelular.calculoIMC.class);
                 startActivity(calculosIMC);
+            }
+        });
+        btnBhaskara = findViewById(R.id.btnBhaskara);
+        btnBhaskara.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent bhaskara = new Intent(getApplicationContext(),com.example.calculadoracelular.bhaskara.class);
+                startActivity(bhaskara);
             }
         });
     }
