@@ -13,6 +13,17 @@
         android:theme="@style/Theme.Calculadoracelular"
         tools:targetApi="31">
         <activity
+            android:name=".resultadoformulario"
+            android:exported="false" />
+        <activity
+            android:name=".resultadoformualrio"
+            android:exported="false"
+            android:label="@string/title_activity_resultadoformualrio"
+            android:theme="@style/Theme.Calculadoracelular" />
+        <activity
+            android:name=".formulario"
+            android:exported="false" />
+        <activity
             android:name=".bhaskara"
             android:exported="false" />
         <activity

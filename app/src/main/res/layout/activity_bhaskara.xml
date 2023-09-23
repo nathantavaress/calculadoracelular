@@ -19,11 +19,15 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <LinearLayout
-        android:layout_width="287dp"
-        android:layout_height="436dp"
+        android:id="@+id/linearLayout3"
+        android:layout_width="261dp"
+        android:layout_height="317dp"
         android:orientation="vertical"
-        tools:layout_editor_absoluteX="62dp"
-        tools:layout_editor_absoluteY="175dp">
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9"
+        app:layout_constraintVertical_bias="0.304">
 
         <TextView
             android:id="@+id/textView7"
@@ -36,7 +40,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="number" />
+            android:inputType="number|numberDecimal|numberSigned" />
 
         <TextView
             android:id="@+id/textView8"
@@ -45,11 +49,11 @@
             android:text="VALOR B:" />
 
         <EditText
-            android:id="@+id/editTextNumber2"
+            android:id="@+id/edtvalor2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="number" />
+            android:inputType="number|numberDecimal|numberSigned" />
 
         <TextView
             android:id="@+id/textView10"
@@ -58,16 +62,27 @@
             android:text="VALOR C:" />
 
         <EditText
-            android:id="@+id/editTextNumber3"
+            android:id="@+id/edtvalor3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="number" />
+            android:inputType="number|numberDecimal|numberSigned" />
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/btncalcularbhs"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Calcular" />
+
     </LinearLayout>
+
+    <Button
+        android:id="@+id/btnSair4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SAIR"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3" />
 </androidx.constraintlayout.widget.ConstraintLayout>
