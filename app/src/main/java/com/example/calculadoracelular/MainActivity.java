@@ -9,7 +9,7 @@ import android.view.View;
 import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
-    Button btnSair, btnCalculo, btnCalculo2, btnBhaskara;
+    Button btnSair, btnCalculo, btnCalculo2, btnBhaskara, btnFormulario;
 
     @SuppressLint("MissingInflatedId")
     @Override
@@ -49,6 +49,14 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent bhaskara = new Intent(getApplicationContext(),com.example.calculadoracelular.bhaskara.class);
                 startActivity(bhaskara);
+            }
+        });
+        btnFormulario = findViewById(R.id.btnformulario);
+        btnFormulario.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent tela1formulario = new Intent(getApplicationContext(),com.example.calculadoracelular.tela1formulario.class);
+                startActivity(tela1formulario);
             }
         });
     }
